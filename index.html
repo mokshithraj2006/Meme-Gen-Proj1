@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+        body{
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        img {
+        border: 1px solid white;
+        border-radius: 5px;
+        max-width: 350px;
+        width: 100%;
+        }
+        button{
+            margin: 20px;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: blueviolet;
+            border-radius: 10px;
+        }
+        .sidebar{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-left: 1px dotted #BFA38A;
+            height: 85vh;
+            position: fixed;        /* keeps it on the side */
+            right: 0; 
+        }
+        .content {
+        width: 65%;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+        div{
+            width: 45%;
+        }
+        button:hover{
+            background-color: aliceblue;
+            opacity: 0.8;
+        }
+    </style></head>
+<body>
+    <section class="content">
+        <div class="meme-content"></div>
+        <div class="joke-content"></div>
+        <div class="riddle-content"></div>
+        <div class="quote-content"></div>
+    </section>
+    <script src="script.js"></script>
+
+    <section class="sidebar">
+    <button onclick="showmeme()">Show A Meme</button>
+    <button onclick="showjokes()">Tell a Joke</button>
+    <button onclick="showquote()">Random Quote</button>
+    <button onclick="showriddle()">Riddle Me</button>
+    <button onclick="reveal()">Reveal Answer</button>
+
+    </section>
+  
+</body>
+</html>
